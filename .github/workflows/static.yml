@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mellow Web Design | By You</title>
+  <style>
+    :root {
+      --mellow-beige: #f5f0e6;
+      --mellow-purple: #9b8a9d;
+      --mellow-gray: #7c737a;
+      --text-dark: #333;
+      --text-light: #fff;
+      --accent: #d4c2c9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--mellow-beige);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--mellow-purple), var(--mellow-gray));
+      color: var(--text-light);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      margin: 1rem auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+
+    nav {
+      background: var(--mellow-gray);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--accent);
+      color: var(--text-dark);
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--mellow-purple);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .portfolio-item .info {
+      padding: 1.5rem;
+    }
+
+    .portfolio-item h3 {
+      margin-bottom: 0.5rem;
+      color: var(--mellow-purple);
+    }
+
+    footer {
+      background: var(--mellow-gray);
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
+    <h1>Hi, I’m [Your Name]</h1>
+    <p class="subtitle">Mellow Web Designer & Builder</p>
+    <p>I craft calm, beautiful, and functional websites for people who want their online presence to feel as good as it looks.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+      I believe websites should be as soothing to navigate as they are powerful. Whether you’re a small business, artist, or entrepreneur — I build sites that reflect your personality and purpose. 
+      <br><br>
+      My process is simple: listen → design → build → refine. No stress. Just mellow magic.
+    </p>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="section-title">My Work</h2>
+    <div class="portfolio-grid">
+      <!-- Example Project 1 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Client+Website+1" alt="Client Project 1">
+        <div class="info">
+          <h3>Local Bakery Site</h3>
+          <p>A cozy, inviting site for a neighborhood bakery — with menu, hours, and order form.</p>
+        </div>
+      </div>
+
+      <!-- Example Project 2 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Client+Website+2" alt="Client Project 2">
+        <div class="info">
+          <h3>Artist Portfolio</h3>
+          <p>Minimalist gallery site for a painter — focused on visuals and contact simplicity.</p>
+        </div>
+      </div>
+
+      <!-- Example Project 3 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x200?text=Client+Website+3" alt="Client Project 3">
+        <div class="info">
+          <h3>Wellness Coach</h3>
+          <p>Calming layout for a mindfulness coach — booking, testimonials, blog integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Let’s Make Something Mellow Together</h2>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto;">
+      Got a project? Let’s chat. I’ll help you bring your vision to life — one pixel at a time.
+    </p>
+    <form style="max-width: 500px; margin: 2rem auto; text-align: left;">
+      <input type="text" placeholder="Your Name" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+      <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+      <textarea placeholder="Tell me about your project..." rows="5" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+      <button type="submit" style="background: var(--mellow-purple); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 5px; cursor: pointer; width: 100%;">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 [Your Name] • Mellow Web Design • Made with care and calm</p>
+  </footer>
+
+</body>
+</html>
